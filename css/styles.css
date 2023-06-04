@@ -108,7 +108,7 @@ img{
     display: flex;
     margin-right: 40px;
     padding: 24px 0;
-    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .nav-link:hover,
@@ -166,6 +166,7 @@ img{
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--color-secondary);
+        transition: color 250 ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .address-link:hover,
     .address-link:focus{
@@ -214,6 +215,7 @@ height: 56px;
 border: none;
 border-radius: 4px;
 cursor: pointer;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .hero-btn:hover,
@@ -395,6 +397,7 @@ font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:hover,
@@ -412,11 +415,7 @@ font-weight: 500;
 .team-soc-item {
         width: 40px;
         height: 40px;
-        /* border-radius: 50%;
-        background-color: var(--color-background);
-        justify-content: center;
-        align-items: center;
-        display: flex; */
+        
     }
 
 .team-soc-icon{
@@ -462,7 +461,7 @@ font-weight: 500;
     align-items: center;
     justify-content: center;
     color: var(--color-customers-icon);
-    
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
 }
 
 .customers-link:hover,
@@ -490,7 +489,6 @@ font-weight: 500;
 
 .footer-container{
     background-color: #2E2F42;
-    /* flex-direction: column; */
     display: flex;
     align-items: baseline;
    
@@ -564,6 +562,7 @@ font-weight: 500;
     justify-content: center;
     align-items: center;
     display: flex;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover,
@@ -590,7 +589,7 @@ align-items: baseline;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-btn:hover,
@@ -612,7 +611,7 @@ color: var(--color-footer-logo);
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover,
@@ -692,7 +691,7 @@ color: var(--color-footer-logo);
 }
 
 .portfolio-cards-item:hover .portfolio-overlay-text{
-    transform: translateY(0);
+    transform: translateY(0%);
 }
 
 .portfolio-overlay-text{
@@ -753,6 +752,7 @@ color: var(--color-footer-logo);
     right: 24px;
     width: 24px;
     height: 24px;
+    padding: 0;
     border-radius: 50%;
     display: flex;
     align-items: center;
