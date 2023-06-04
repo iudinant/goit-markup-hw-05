@@ -694,7 +694,9 @@ color: var(--color-footer-logo);
     overflow: hidden;
 }
 
-.portfolio-cards-item:hover .portfolio-overlay-text,
+.portfolio-cards-item:hover .portfolio-overlay-text{
+    transform: translateY(0%);
+}
 .portfolio-cards-item:focus .portfolio-overlay-text{
     transform: translateY(0%);
 }
